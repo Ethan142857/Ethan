@@ -1,0 +1,12 @@
+number = input()
+number = float(number)
+num_1 = int (number)
+num_2 = number-num_1
+bin_1 = bin(num_1)
+print(f"{bin_1}.",end = "")
+num_s = num_2
+while num_s != 0:
+    num_2 = num_2*2
+    num_s = num_2-int(num_2)
+    print(round(num_s),end = "")
+    num_2 = num_s
