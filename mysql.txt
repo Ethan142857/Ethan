@@ -1,0 +1,48 @@
+
+CREATE TABLE 'user'{
+	'id' int (11) NOT NULL AUTO_INCREMENT,
+	'name'varchar(20) NOT NULL,
+	'sex' int(11) DEFAULT NULL,
+	'age' int(11) DEFAULT NULL,
+	'phone'int(20) DEFAULT NULL,
+	PRIMARY KEY('id')
+};
+
+INSERT INTO 'user'VALUES(1,'赵乾',1,11451445141);
+INSERT INTO 'user'VALUES(2,'孙礼',1,14285728571);
+INSERT INTO 'user'VALUES(3,'周吴',0,28571442857);
+INSERT INTO 'user'VALUES(4,'郑王',1,42857157142);
+INSERT INTO 'user'VALUES(5,'张源',1,57142871428);
+
+select name from user where age between 20 and 30;
+
+delete from user where name = '张';
+
+select average as 'average-age' from age group by user;
+
+select age,name 
+from user where name = '张' and age between 20 and 30 
+order by age;
+
+
+
+CREATE TABLE 'team'{
+	'id'int (11)NOT NULL AUTO_INCREMENT,
+	'teamName'varchar(20)NOT NULL,
+	PRIMARY KEY('id')
+};
+CREATE TABLE 'score'{
+	'id'int (11)NOT NULL AUTO_INCREMENT,
+	CONSTRAINT teamdi FOREIGN KEY(id) REFERENCES team(id)
+	CONSTRAINT userid FOREIGN KEY(id) REFERENCES user(id)
+	'score'int (11)DEFAULT NULL,
+	PRIMAY KEY('id')
+};
+
+select teamName
+from team st join 
+where teaName = 'ECNU' and age <20
+
+
+select sum
+from user where teamname = 'ECNU'
