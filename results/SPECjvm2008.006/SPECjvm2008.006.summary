@@ -1,0 +1,10 @@
+Report:      SPECjvm2008 Base summary
+Result:      Composite result: 90.15 SPECjvm2008 Base ops/m
+HW Model:    n/a, n/a
+HW CPU:      n/a, n/a
+OS:          Linux
+JVM:         Private Build, OpenJDK 64-Bit Server VM, 25.422-b05 mixed mode
+JVM tuning:  n/a
+JVM startup:  
+Tester:      xiaoziqiu, n/a
+Run date:    Wed Oct 09 22:04:01 CST 2024
